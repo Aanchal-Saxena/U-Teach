@@ -1,0 +1,33 @@
+
+:root {
+    --header-height: 7rem;
+
+    /*========== COLORS ==========*/
+    --text-color: #0F172A;
+    --button-color:#EA580C;
+    --blue-color: #2563EB;
+    --yellow-color: #FACC15;
+    --card-color: #FFFFFF;
+    --bottom-text-color: #475569;
+    --secondary-section-color: #000000;
+    --sub-heading-color: #6d6d6dc0;
+    --hover-red-color: #960000;
+    --dropdown-bg-color: rgba(225, 225, 225, 0.25);
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Inter', sans-serif;
+    --certificate-font-size: 4.7rem;
+    --certificate-font-size-small: 3.5rem;
+    --biggest-font-size: 4rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 2rem;
+    --normal-font-size: 1.8rem;
+    --small-font-size: 1.3rem;
+  
+    /*========== FONT WEIGHT ==========*/
+    --font-bold-heavy: 800;
+    --font-bold: 700;
+    --font-semi-bold: 600;
+    --font-semi-bold-secondary: 500
+    --font-light: 200;
+}

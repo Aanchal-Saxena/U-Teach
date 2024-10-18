@@ -1,0 +1,126 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('variables.css');
+
+:root {
+    --header-height: 7rem;
+
+    /*========== COLORS ==========*/
+    --primary-color: #0F172A;
+    --button-color:#EA580C;
+    --blue-color: #2563EB;
+    --yellow-color: #FACC15;
+    --card-color: #FFFFFF;
+    --bottom-text-color: #475569;
+    --secondary-section-color: #000000;
+    --sub-heading-color: #6d6d6dc0;
+    --hover-red-color: #960000;
+    --dropdown-bg-color: rgba(225, 225, 225, 0.25);
+
+    /*========== Font and Typography ==========*/
+    --body-font: "Roboto", sans-serif;
+    --certificate-font-size: 4.7rem;
+    --certificate-font-size-small: 3.5rem;
+    --biggest-font-size: 4rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 2rem;
+    --normal-font-size: 1.8rem;
+    --small-font-size: 1.2rem;
+  
+    /*========== FONT WEIGHT ==========*/
+    --font-bold-heavy: 800;
+    --font-bold: 700;
+    --font-semi-bold: 600;
+    --font-semi-bold-secondary: 500
+    --font-light: 200;
+
+    /*========== Common Padding ==========*/
+    --nav-padding: 0 7rem;
+}
+
+
+/*========== BASE CLASSES ==========*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--body-font);
+}
+
+section {
+    width: 100vw;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header {
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    z-index: 1000;
+} */
+
+
+/*========== COMMON CLASS CSS ==========*/
+
+.button {
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    background-color: transparent;
+}
+
+
+/*========== NAV ==========*/
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    background-color: var(--first-color);
+    padding: 0 3.5rem;
+    border: 2px solid red;
+    padding: var(--nav-padding);
+}
+
+.nav-options-container {
+    display: flex;
+    gap: 4.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-options-container a {
+    font-size: var(--small-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.log-in-btn {
+    border: none;
+}
+
+.sign-up-btn {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.nav-logo {
+    transform: scale(1.3);
+}
+
