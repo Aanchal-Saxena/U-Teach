@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/mediaquery.css" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <title>Landing Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!--========== HEADER ==========-->
 
-  <header>
+    <header>
+      <nav class="nav">
+        <div class="nav-options-container">
+          <a href="#" class="nav-logo"
+            ><img src="./assets/img/logo.svg" alt="Logo Image" id="logo-img"
+          /></a>
+          <div class="nav-item"><a href="#">Product</a></div>
+          <div class="nav-item"><a href="#">Solutions</a></div>
+          <div class="nav-item"><a href="#">Pricing</a></div>
+          <div class="nav-item"><a href="#">Resources <i class="fa-solid fa-angle-down"></i> </a></div>
+        </div>
 
-    <nav class="nav">
-      <div class="nav-options-container">
-        <a href="#" class="nav-logo"><img src="./assets/img/logo.svg" alt="Logo Image" id="logo-img"/></a>
-        <div class="nav-item"><a href="#">Product</a></div>
-        <div class="nav-item"><a href="#">Solutions</a></div>
-        <div class="nav-item"><a href="#">Pricing</a></div>
-        <div class="nav-item"><a href="#">Resources</a></div>
-      </div>
+        <div class="nav-buttons">
+          <button class="button log-in-btn">Log In</button>
+          <button class="button sign-up-btn">Sign Up Now</button>
+        </div>
 
-      <div class="nav-buttons">
-        <button class="button log-in-btn">Log In</button>
-        <button class="button sign-up-btn">Sign Up Now</button>
-      </div>
-
-      <!-- <div class="toggle-btn">
+        <!-- <div class="toggle-btn">
         <i class="fa-solid fa-bars"></i>
       </div> -->
 
-      <!-- <div class="dropdown-menu">
+        <!-- <div class="dropdown-menu">
 
         <div class="dropdown-list-container nav-menu">
           <ul class="dropdown-ul nav-list">
@@ -51,20 +66,412 @@
         <button class="button lets-talk-btn dropdown-btn">Lets Talk.</button>
         
       </div> -->
+      </nav>
+    </header>
 
-    </nav>
+    <!--========== MAIN ==========-->
 
-  </header>
+    <main>
+      <!--========== HOME SECTION ==========-->
 
-  <main>
+      <section class="home-section">
+        <div class="section-container home-container">
+          <div class="content-container home-content-container">
+            <div class="data">
+              <div class="home-title">
 
-    <section class="home-section">
-      <div class="section-container home-container">
-        <div class="content-container"></div>
+                <p> <span id="teach-underline">Teach<span class="underline"><img
+                  src="./assets/img/home/textUnderline.svg"
+                  alt="" /></span></span> students worldwide</p>
+                
+              </div>
+              <p class="home-info">
+                Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin
+                massa tincidunt viverra lectus pulvinar. Nunc ipsum est
+                pellentesque turpis ultricies.
+              </p>
+              <div class="home-buttons">
+                <button class="button home-sign-up-btn">Sign Up Now</button>
+                <button class="button home-view-demo-btn">
+                  <i class="fa-regular fa-circle-play"></i> View Demo
+                </button>
+              </div>
+            </div>
+            <div class="home-footer">
+              <p>
+                Trusted by <br />
+                leading companies
+              </p>
+              <img
+                src="./assets/img/home/footer-icon1.svg"
+                alt="Footer Icon"
+                class="home-footer-img"
+              />
+              <img
+                src="./assets/img/home/footer-icon2.svg"
+                alt="Footer Icon"
+                class="home-footer-img"
+              />
+              <img
+                src="./assets/img/home/footer-icon3.svg"
+                alt="Footer Icon"
+                class="home-footer-img"
+              />
+              <img
+                src="./assets/img/home/footer-icon4.svg"
+                alt="Footer Icon"
+                class="home-footer-img"
+              />
+              <img
+                src="./assets/img/home/footer-icon5.svg"
+                alt="Footer Icon"
+                class="home-footer-img"
+              />
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="teacher-img-container">
+              <img id="teacher" src="./assets/img/home/Teacher.svg" alt="Teacher">
+            </div>
+            <div class="chats-img-container">
+              <img id="chats" src="./assets/img/home/chat.svg" alt="Chat Image">
+            </div>
+            <div class="student-img-container">
+              <img id="student" src="./assets/img/home/Student.svg" alt="Student">
+            </div>
+            <div class="icons-img-container">
+              <img id="icons" src="./assets/img/home/icons.svg" alt="Icons Image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="img-home">
+        <div class="teacher-img">
+            <img src="src/img/images/home/Teacher.svg" alt="">
+        </div>
+        <div class="chat-img">
+            <img src="src/img/images/home/Chat.svg" alt="">
+        </div>
+        <div class="student-img">
+            <img src="src/img/images/home/Student.svg" alt="">
+        </div>
+        <div class="imgicon">
+            <img src="src/img/images/home/imageicon.svg" alt="">
+        </div>
+    </div> -->
+
+      <!--========== TOOLS SECTION ==========-->
+
+      <section class="tools-section">
+        <div class="tools-section-container">
+          <div class="bg-img-container">
+            <div class="tools-bg1-container">
+              <img
+              id="tools-bg1" src="./assets/img/tools/bg1.svg" alt="Background Image" />
+            </div>
+            <div class="tools-bg2-container">
+              <img
+              id="tools-bg2" src="./assets/img/tools/bg2.svg" alt="Background Image"/>
+            </div>
+          </div>
+          <div class="content-container tools-content-container">
+            <div class="data">
+              <div class="title">
+                <p>All the tools that you need</p>
+              </div>
+              <p class="info">
+                Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
+                suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum
+                ultrices amet, dui sit suspendisse.
+              </p>
+            </div>
+          </div>
+
+          <div class="desktop-container">
+            <img
+            class="desktop-img"
+            src="./assets/img/tools/Desktop.svg"
+            alt="desktop Image"/>
+          </div>
+
+          <div class="tools-icons-container">
+            <div class="tools-icon-slide">
+              <img src="./assets/img/tools/icon1.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon2.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon3.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon4.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon5.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon6.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon7.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon8.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon9.svg" alt="Icon" class="tools-icon">
+            </div>
+
+            <div class="tools-icon-slide">
+              <img src="./assets/img/tools/icon1.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon2.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon3.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon4.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon5.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon6.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon7.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon8.svg" alt="Icon" class="tools-icon">
+              <img src="./assets/img/tools/icon9.svg" alt="Icon" class="tools-icon">
+            </div>
+
+          </div>
+            
+        </div>
+
+      </section>
+
+      <!--========== CARDS SECTION ==========-->
+
+      <section class="cards-section">
+        <div class="section-container cards-section-container">
+
+          <div class="first-row-container">
+            <p class="cards-section-title">What everyone says</p>
+
+          <div class="card-nav-buttons">
+            <button class="prev-btn card-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="next-btn card-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Cards -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card-info">
+                    Lacus vestibulum ultricies mi risus, duis non, volutpat
+                    nullam non. Magna congue nisi maecenas elit aliquet eu sed
+                    consectetur. Vitae quis cras vitae praesent morbi adipiscing
+                    purus consectetur mi.
+                  </p>
+                  <div class="card-profile">
+                    <img src="./assets/img/cards/dp1.svg" alt="User Profile" />
+                    <div class="card-user">
+                      <p class="user-name">Hellen Jummy</p>
+                      <p class="user-designation">Financial Counselor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card-info">
+                    Odio rhoncus ornare ut quam. Molestie vel duis quis
+                    scelerisque ut id. In tortor turpis viverra sagittis
+                    ultrices nisi, nec tortor. Vestibulum, ultrices ultricies
+                    neque, hac ultricies dolor.
+                  </p>
+                  <div class="card-profile">
+                    <img src="./assets/img/cards/dp2.svg" alt="User Profile" />
+                    <div class="card-user">
+                      <p class="user-name">Ralph Edwards</p>
+                      <p class="user-designation">Math Teacher</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card-info">
+                    Sagittis nunc egestas leo et malesuada urna risus. Morbi
+                    proin et cras aliquam. Diam tellus, amet, hac imperdiet.
+                    Tellus mi volutpat tellus, congue malesuada sit nisl donec
+                    a.
+                  </p>
+                  <div class="card-profile">
+                    <img src="./assets/img/cards/dp3.svg" alt="User Profile" />
+                    <div class="card-user">
+                      <p class="user-name">Hellena John</p>
+                      <p class="user-designation">Psychology Student</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card-info">
+                    Lacus vestibulum ultricies mi risus, duis non, volutpat
+                    nullam non. Magna congue nisi maecenas elit aliquet eu sed
+                    consectetur. Vitae quis cras vitae praesent morbi adipiscing
+                    purus consectetur mi.
+                  </p>
+                  <div class="card-profile">
+                    <img src="./assets/img/cards/dp1.svg" alt="User Profile" />
+                    <div class="card-user">
+                      <p class="user-name">Hellen Jummy</p>
+                      <p class="user-designation">Financial Counselor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card-info">
+                    Odio rhoncus ornare ut quam. Molestie vel duis quis
+                    scelerisque ut id. In tortor turpis viverra sagittis
+                    ultrices nisi, nec tortor. Vestibulum, ultrices ultricies
+                    neque, hac ultricies dolor.
+                  </p>
+                  <div class="card-profile">
+                    <img src="./assets/img/cards/dp2.svg" alt="User Profile" />
+                    <div class="card-user">
+                      <p class="user-name">Ralph Edwards</p>
+                      <p class="user-designation">Math Teacher</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <p class="card-info">
+                    Sagittis nunc egestas leo et malesuada urna risus. Morbi
+                    proin et cras aliquam. Diam tellus, amet, hac imperdiet.
+                    Tellus mi volutpat tellus, congue malesuada sit nisl donec
+                    a.
+                  </p>
+                  <div class="card-profile">
+                    <img src="./assets/img/cards/dp3.svg" alt="User Profile" />
+                    <div class="card-user">
+                      <p class="user-name">Hellena John</p>
+                      <p class="user-designation">Psychology Student</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+      <!--========== SIGN-UP SECTION ==========-->
+
+      <section class="sign-up-section">
+        <div class="section-container sign-up-section-container">
+          <div class="content-container sign-up-content-container">
+            <div class="data">
+              <div class="title">
+                <p>Join a world of learning</p>
+              </div>
+              <p class="info">
+                Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.
+                Risus elit et fringilla habitant ut facilisi.
+              </p>
+              <button class="button home-sign-up-btn section-sign-up-btn">
+                Sign Up Now
+              </button>
+            </div>
+          </div>
+          <div class="sign-up-section-bg-images">
+            <div class="signup-bg1-container">
+              <img
+              id="signup-bg1"
+              src="./assets/img/signup/bg1.svg"
+              alt="Background Image"
+            />
+            </div>
+            <div class="signup-bg2-container">
+              <img
+              id="signup-bg2"
+              src="./assets/img/signup/bg2.svg"
+              alt="Background Image"
+            />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer-container section-container">
+        <div class="container-one">
+
+          <div class="footer-logo-container"><img src="./assets/img/logo-2.svg" alt="Logo" /></div>
+
+          <div class="footer-list">
+            <label for="">Products</label>
+            <ul>
+              <li>Pricing</li>
+              <li>Overview</li>
+              <li>Price</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+
+          <div class="footer-list">
+            <label for="">Solution</label>
+            <ul>
+              <li>Brainstroming</li>
+              <li>Ideation</li>
+              <li>Wireframing</li>
+              <li>Research</li>
+            </ul>
+          </div>
+
+          <div class="footer-list">
+            <label for="">Resources</label>
+            <ul>
+              <li>Help Center</li>
+              <li>Blog</li>
+              <li>Tutorials</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+
+          <div class="footer-list">
+            <label for="">Support</label>
+            <ul>
+              <li>Contact Us</li>
+              <li>Developers</li>
+              <li>Documentation</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+
+          <div class="footer-list">
+            <label for="">Company</label>
+            <ul>
+              <li>About</li>
+              <li>Press</li>
+              <li>Events</li>
+              <li>Request demo</li>
+            </ul>
+          </div>
+
+        </div>
+        <hr>
+        <div class="container-two">
+          <p>uteach @ 2023. All rights reserved.</p>
+          <div class="footer-list-container">
+            <span class="footer-list-item">Terms</span>
+            <span class="footer-list-item">Privacy</span>
+            <span class="footer-list-item">Contact</span>
+            <span class="footer-list-item"><i class="fa-solid fa-globe"></i>EN</span>
+            <span class="footer-list-item"> <i class="fa-solid fa-euro-sign"></i> EUR</span>
+            <span class="footer-list-item">Meow</span>
+          </div>
+        </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-</body>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

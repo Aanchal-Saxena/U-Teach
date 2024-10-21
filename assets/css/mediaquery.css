@@ -1,0 +1,197 @@
+
+
+@media only screen and (max-width: 1550px) {
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --biggest-font-size: 4.4rem;
+        --h1-font-size: 4rem;
+        --normal-font-size: 1.4rem;
+        --small-font-size: 1.1rem;
+        --small-font-size-secondary: 1rem;
+    }
+
+    .home-footer {
+        gap: 1rem;
+    }
+
+    .home-footer img {
+        transform: scale(1);
+    }
+
+    #tools-bg1 {
+        transform: scale(1);
+    }
+
+}
+
+@media only screen and (max-width: 1376px) { 
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --h1-font-size: 2.4rem;
+        --small-font-size: 0.9rem;
+    }
+
+    .home-sign-up-btn {
+        font-size: var(--small-font-size-secondary);
+        padding: 1rem 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1108px) { 
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --biggest-font-size: 3.5rem;
+        --h1-font-size: 2.6rem;
+        --normal-font-size: 1.1rem;
+        --small-font-size: 1rem;
+        --small-font-size-secondary: 0.8rem;
+    }
+
+    .home-content-container {
+        width: 70%;
+    }
+
+    #student{
+        top: -18vh;
+    }
+
+    #chats {
+        top: -18vh;
+    }
+
+    #teacher {
+        top: 10vh;
+    }
+
+    #icons {
+        left: -2vw;
+    }
+
+}
+
+@media only screen and (max-width: 1108px) { 
+
+
+    #student{
+        transform: scale(2.5);
+    }
+
+    #chats {
+        transform: scale(2.5);
+        left: 3vw;
+    }
+
+    #teacher {
+        transform: scale(2.5);
+        left: 1vw;
+    }
+
+    #icons {
+        transform: scale(2.5);
+    }
+
+    .content-container {
+        width: 70%;
+    }
+
+    .tools-icons-container img {
+        transform: scale(0.8);
+    }
+
+    .container-one {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 800px) { 
+    :root {
+        /*========== Font and Typography ==========*/
+        --biggest-font-size: 2.5rem;
+        --h1-font-size: 2.6rem;
+        --normal-font-size: 0.8rem;
+        --small-font-size: 1rem;
+        --small-font-size-secondary: 0.8rem;
+    }
+
+    #student{
+        transform: scale(3.5);
+    }
+
+    #chats {
+        transform: scale(3.5);
+        left: 1vw;
+    }
+
+    #teacher {
+        transform: scale(3.5);
+        left: 1vw;
+    }
+
+    #icons {
+        transform: scale(3.5);
+        top: 15vh;
+        left: 2vw;
+    }
+
+    .home-footer {
+        gap: 2rem;
+    }
+
+    .home-footer img {
+        transform: scale(0.8);
+    }
+
+    .home-container {
+        gap: 2rem;
+    }
+
+    .home-content-container {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) { 
+
+    :root {
+        /*========== Font and Typography ==========*/
+        --section-padding: 4rem 3rem;
+    }
+
+    .home-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 300px;
+    }
+
+    #student{
+        transform: scale(1.3);
+        top: 0vh;
+    }
+
+    #chats {
+        transform: scale(1.3);
+        top: 2vh;
+        left: 6vw;
+    }
+
+    #teacher {
+        transform: scale(1.3);
+        top: 16vh;
+    }
+
+    #icons {
+        transform: scale(1.3);
+        top: 30vh;
+        left: -10vw;
+    }
+
+}
